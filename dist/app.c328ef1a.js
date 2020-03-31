@@ -129,6 +129,7 @@ var Dom = {
   description: ".add__description",
   value: ".add__value"
 };
+var img = "ImgSVGcancel-circle.svg";
 
 var getInput = function getInput() {
   return {
@@ -152,10 +153,10 @@ var addListItem = function addListItem(obj, type) {
 
   if (type === "inc") {
     element = document.querySelector(".income__list");
-    html = " <div class=\"item\" id=\"inc-%id%\">\n      <div class=\"item__description\">%description%</div>\n      <div class=\"box__value\">\n      <div class=\"item__value item__value-income\">+ %value%</div>\n      <div class=\"item__delete\">\n      <svg class=\"icon-box-delete\">\n      <use xlink:href=\"img/sprite.svg#icon-cancel-circle\"></use>\n      </svg>\n      </div>\n      </div>\n      </div>";
+    html = " <div class=\"item\" id=\"inc-%id%\">\n      <div class=\"item__description\">%description%</div>\n      <div class=\"box__value\">\n      <div class=\"item__value item__value-income\">+ %value%</div>\n      <div class=\"item__delete\">\n      <svg class=\"icon-box-delete\">\n      <use xlink:href=\"Img/sprite.svg#icon-cancel-circle\"></use>\n      </svg>\n      </div>\n      </div>\n      </div>";
   } else if (type === "exp") {
     element = document.querySelector(".expenses__list");
-    html = "<div class=\"item\" id=\"exp-%id%\">\n  <div class=\"item__description\">%description%</div>\n  <div class=\"box__value\">\n  <div class=\"item__value item__value-expense\">- %value%</div>\n  <div class=\"item__percentage\">21%</div>\n  <div class=\"item__delete\">\n  <svg class=\"icon-box-delete\">\n  <use xlink:href=\"img/sprite.svg#icon-cancel-circle\"></use>\n  </svg>\n  </div>\n  </div>\n  </div>";
+    html = "<div class=\"item\" id=\"exp-%id%\">\n  <div class=\"item__description\">%description%</div>\n  <div class=\"box__value\">\n  <div class=\"item__value item__value-expense\">- %value%</div>\n  <div class=\"item__percentage\">21%</div>\n  <div class=\"item__delete\">\n  <svg class=\"icon-box-delete\">\n  <use xlink:href=\"Img/sprite.svg#icon-cancel-circle\"></use>\n  </svg>\n  </div>\n  </div>\n  </div>";
   }
 
   var newHtml = html.replace("%id%", obj.id);
@@ -513,7 +514,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "6886" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "7066" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
