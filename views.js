@@ -4,7 +4,7 @@ const Dom = {
     value: ".add__value"
 };
 
-const img = "ImgSVGcancel-circle.svg";
+const img = "Img/SVG/cancel-circle.svg";
 
 export const getInput = () => {
     return {
@@ -31,7 +31,7 @@ export const addListItem = (obj, type) => {
       <div class="item__value item__value-income">+ %value%</div>
       <div class="item__delete">
       <svg class="icon-box-delete">
-      <use xlink:href="Img/sprite.svg#icon-cancel-circle"></use>
+      <use xlink:href="${img}"></use>
       </svg>
       </div>
       </div>
@@ -45,7 +45,7 @@ export const addListItem = (obj, type) => {
   <div class="item__percentage">21%</div>
   <div class="item__delete">
   <svg class="icon-box-delete">
-  <use xlink:href="Img/sprite.svg#icon-cancel-circle"></use>
+  <use xlink:href="${img}"></use>
   </svg>
   </div>
   </div>
