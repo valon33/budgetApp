@@ -4,7 +4,8 @@
   "description": "budget app",
   "main": "app.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Valon Saidi",
   "license": "ISC",
