@@ -30,7 +30,7 @@ export const addListItem = (obj, type) => {
       <div class="item__value item__value-income">+ %value%</div>
       <div class="item__delete">
       <svg class="icon-box-delete">
-      <use href="img/sprite.svg#icon-cancel-circle"></use>
+      <use href="./img/SVG/cancel-circle.svg"></use>
         </svg>
       </div>
       </div>
@@ -44,7 +44,7 @@ export const addListItem = (obj, type) => {
   <div class="item__percentage">21%</div>
   <div class="item__delete">
   <svg class="icon-box-delete">
-  <use href="img/sprite.svg#icon-cancel-circle"></use>
+  <use href="./img/SVG/cancel-circle.svg"></use>
     </svg>
   </div>
   </div>
