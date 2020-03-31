@@ -29,8 +29,8 @@ export const addListItem = (obj, type) => {
       <div class="box__value">
       <div class="item__value item__value-income">+ %value%</div>
       <div class="item__delete">
-      <svg class="icon-box-delete" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <use xlink:href="img/sprite.svg#icon-cancel-circle"></use>
+      <svg class="icon-box-delete">
+      <use href="img/sprite.svg#icon-cancel-circle"></use>
         </svg>
       </div>
       </div>
@@ -44,7 +44,7 @@ export const addListItem = (obj, type) => {
   <div class="item__percentage">21%</div>
   <div class="item__delete">
   <svg class="icon-box-delete">
-  <use xlink:href="img/sprite.svg#icon-cancel-circle"></use>
+  <use href="img/sprite.svg#icon-cancel-circle"></use>
     </svg>
   </div>
   </div>
