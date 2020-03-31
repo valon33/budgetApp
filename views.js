@@ -4,6 +4,7 @@ const Dom = {
     value: ".add__value"
 };
 
+// Get input
 export const getInput = () => {
     return {
         type: document.querySelector(".add__type").value,
